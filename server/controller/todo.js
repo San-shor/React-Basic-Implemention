@@ -14,6 +14,7 @@ exports.getAllList = async (req, res) => {
 exports.postAllTask = async (req, res) => {
   try {
     const task = req.body;
+    console.log(task)
 
     const result = await Todo.create(task);
     res.status(201);

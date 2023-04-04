@@ -1,0 +1,15 @@
+.list-card{
+    width: 200px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 6px;
+    text-align: center;
+    height: 200px;
+}
+
+.title{
+    font-size: 20px;
+}
+.author{
+    font-size: 15px;
+}

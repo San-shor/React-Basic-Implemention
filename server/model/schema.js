@@ -3,7 +3,9 @@ const { Schema } = require("mongoose");
 
 const todoschema = new Schema({
   title: String,
-  complete: { type: Boolean, default: false },
+  author_name:String,
+  author_surname:String,
+  favorite: Boolean,
 });
 
 const Todo = mongoose.model("Todo", todoschema);

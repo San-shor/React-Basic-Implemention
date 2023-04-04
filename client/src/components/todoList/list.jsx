@@ -1,23 +1,11 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Taskcard from "../listcard/card";
+import './list.css'
 
-const TaskList = () => {
-  const [task, setTask] = useState([]);
-
-  const fetchData = () => {
-    fetch(" http://localhost:3000/tasks")
-      .then((res) => res.json())
-      .then((data) => {
-        console.log(data);
-        setTask(data);
-      });
-  };
-
-  useEffect(() => {
-    fetchData();
-  }, []);
+const TaskList = ({task}) => {
+ 
   return (
-    <div>
+    <div className="task-container">
       {task.map((list, i) => {
         return (
           <div key={i}>
